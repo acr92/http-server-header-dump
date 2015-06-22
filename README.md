@@ -5,13 +5,13 @@ Simple Golang http server to dump your HTTP headers. Useful when testing if you'
 ## Instructions
 Either build the Docker image (`docker build -t http-headers .`) or start the server using `go run main.go`.
 
-The server is hardcoded to listen to port `8080`.
+The server listens per default to port `8080`, but you can override this with the `--port` command line argument.
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) <year> <copyright holders>
+Copyright (c) 2015 Arne-Christian Blystad
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
