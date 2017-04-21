@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 	"net/http"
 	"strconv"
@@ -9,6 +10,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	r.Write(w)
+	fmt.Fprintf(w, "RemoteAddr: %s", r.RemoteAddr)
 }
 
 func main() {
